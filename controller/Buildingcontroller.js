@@ -9,7 +9,7 @@ addbuildings = async (req, res) => {
 
     try {
         await newBuilding.save();
-        res.status(200).json({ message: 'Building added successfully', building: newBuilding });
+        res.status(200).json({ message: 'Building     added successfully', building: newBuilding });
     } catch (error) {
         res.status(500).json({ message: 'Error adding building', error });
     }
